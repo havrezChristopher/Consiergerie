@@ -1,16 +1,54 @@
-* {
-  background-color: black;
-  color: white;
+/* ===== Responsive ===== */
+:root {
+  --page-bg: #e6e6e6; /* gris clair */
+  --shell-bg: #ffffff; /* fond de la barre */
+  --shell-bd: #d9d9d9; /* bord fin */
+  --text: #111827; /* texte */
+  --muted: #6b7280; /* secondaire */
+  --chip: #111111; /* lien actif (noir) */
+  --cta: #2563eb; /* bleu bouton */
 }
-
 /* <weight>: Use a value from 400 to 900 */
 /* <uniquifier>: Use a unique and descriptive class name */
-
-/* ici classe avec la posibiliter de modifier plusieur paramettre pour la police */
-.tested-font {
+/* Police Modification */
+.header-font {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 900;
   font-style: normal;
 }
-/* ici classe avec la posibiliter de modifier plusieur paramettre pour la police */
+.header-font-italic {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+
+  font-style: italic;
+}
+.header-font-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* NAV collée en haut + ombre au scroll */
+.header {
+  position: sticky; /* <- le secret */
+  top: 12px; /* petit espace comme la maquette */
+  z-index: 1000; /* passe au-dessus du contenu */
+  padding: 12px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  width: 1000px;
+  height: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+  background: #0000009c;
+  border-radius: 50px;
+}
